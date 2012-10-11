@@ -1,0 +1,979 @@
+/* @override 
+	http://localhost:8888/southernbay.com.au/wp-content/themes/HTML5-Reset-Wordpress-Theme/style.css
+	http://localhost:8888/phillipisland/wordpress/wp-content/themes/HTML5-Reset-Wordpress-Theme/style.css
+	http://pinp.brandtopia.net/wp-content/themes/HTML5-Reset-Wordpress-Theme/style.css */
+
+/*   
+Theme Name: The HTML5 Reset Theme
+Theme URI: http://html5reset.org
+Description: A style-free theme to get you started on an HTML5-based Wordpress theme of your own.
+Author: Monkey Do!
+Author URI: http://monkeydo.biz
+Version: 1
+*/
+
+/*
+	HTML5 Reset Wordpress Theme :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+	
+	Eric Meyer					:: http://ericmeyer.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+	
+	Special thanks: The Wordpress theme owes its start to an empty theme authored 
+		by Chris Coyier & Jeff Starr: http://digwp.com
+	
+/* Ok, this is where the fun starts.
+-------------------------------------------------------------------------------*/
+
+/* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
+//body {font: 13px Helmet, Freesans, sans-serif;}
+
+/* using local fonts? make sure to read up on Paul Irish's 
+	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+
+/* we like off-black for text */
+//body, select, input, textarea {color: #333;}
+
+//a {color: #03f;}
+//a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;} 
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+
+
+/* And here begins the Wordpress fun.
+-------------------------------------------------------------------------------*/
+
+/*#page-wrap {width: 960px; margin: 20px auto;}*/
+
+.clear {
+	clear: both;
+}
+
+.post {}
+
+.entry-content {}
+.entry-content a {}
+.entry-content a:hover {}
+
+#meta {}
+.postmetadata {}
+
+#sidebar {}
+
+.navgation {}
+.next-posts {}
+.prev-posts {}
+
+#searchform {}
+#s {}
+#searchsubmt {}
+	
+ol.commentlist {list-style: none;}
+ol.commentlist li {}
+ol.commentlist li.alt {}
+ol.commentlist li.bypostauthor {}
+ol.commentlist li.byuser {}
+ol.commentlist li.comment-author-admin {}
+ol.commentlist li.comment {border-bottom: 1px dotted #666; padding: 10px;}
+ol.commentlist li.comment div.comment-author {}
+ol.commentlist li.comment div.vcard {}
+ol.commentlist li.comment div.vcard cite.fn {font-style: normal;}
+ol.commentlist li.comment div.vcard cite.fn a.url {}
+ol.commentlist li.comment div.vcard img.avatar {float:right; margin: 0 0 10px 10px;}
+ol.commentlist li.comment div.vcard img.avatar-32 {}
+ol.commentlist li.comment div.vcard img.photo {}
+ol.commentlist li.comment div.vcard span.says {}
+ol.commentlist li.comment div.commentmetadata {}
+ol.commentlist li.comment div.comment-meta {font-size: 10px;}
+ol.commentlist li.comment div.comment-meta a {color: #ccc;}
+ol.commentlist li.comment p {}
+ol.commentlist li.comment ul {}
+ol.commentlist li.comment div.reply {font-size: 11px;}
+ol.commentlist li.comment div.reply a {font-weight: bold;}
+ol.commentlist li.comment ul.children {list-style: none; margin: 10px 0 0;}
+ol.commentlist li.comment ul.children li {}
+ol.commentlist li.comment ul.children li.alt {}
+ol.commentlist li.comment ul.children li.bypostauthor {}
+ol.commentlist li.comment ul.children li.byuser {}
+ol.commentlist li.comment ul.children li.comment {}
+ol.commentlist li.comment ul.children li.comment-author-admin {}
+ol.commentlist li.comment ul.children li.depth-2 {border-left: 5px solid #555; margin: 0 0 10px 10px;}
+ol.commentlist li.comment ul.children li.depth-3 {border-left: 5px solid #999; margin: 0 0 10px 10px;}
+ol.commentlist li.comment ul.children li.depth-4 {border-left: 5px solid #bbb; margin: 0 0 10px 10px;}
+ol.commentlist li.comment ul.children li.depth-5 {}
+ol.commentlist li.comment ul.children li.odd {}
+ol.commentlist li.even {background: #fff;}
+ol.commentlist li.odd {background: #f6f6f6;}
+ol.commentlist li.parent {border-left: 5px solid #111;}
+ol.commentlist li.thread-alt {}
+ol.commentlist li.thread-even {}
+ol.commentlist li.thread-odd {}
+
+/*label {
+	display: inline;
+}
+
+input.input-text {
+	padding-top: 13px;
+	padding-bottom: 13px;
+}*/
+
+/* @group Map */
+
+body {
+	padding: 0;
+	/*background-image: url(_/img/background.jpg);*/
+}
+
+img.toplogo {
+	margin-left: 145px;
+}
+
+.backgroundimage {
+	/*z-index: -1;
+	position: absolute;*/
+	/*width: 100%;*/
+}
+
+#backgroundimagecontainer {
+	position:fixed;
+	top:-50%;
+	left:-50%;
+	width:200%;
+	height:200%;
+	z-index: -1;
+}
+#backgroundimagecontainer img {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin: auto;
+	min-width:50%;
+	min-height:50%;
+}
+
+.container {
+	overflow: hidden;
+	min-height: 650px;
+	position: relative;
+	padding: 10px 50px 50px;
+	width: 1170px;
+}
+
+#worldmap .mapimage img, .subworld .mapimage img {
+	width: 100%;
+	height: auto;
+	z-index: 0;
+}
+
+#worldmap > .mapimage > img {
+	opacity: 0;
+}
+
+#worldmap .imagedimmer {
+	width: 100%;
+	background-color: #0e2644;
+	height: 473px;
+	position: absolute;
+	opacity: 1;
+}
+
+/*#worldmap .mapimage > img {
+	opacity: 0.31;
+}*/
+
+span.locationicon > img {
+	width: 56px;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	background: url(_/img/iconshadow.png) no-repeat 0 0;
+	padding-bottom: 15px;
+}
+
+span.locationicon > img:hover {
+	background-position: -64px 2px;
+}
+
+#map {
+	position: relative;
+	margin-top: 20px;
+	padding: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	/*background: #224672;*/
+	background: #0e2644;
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.65);
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.65);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.65);
+}
+
+.mapcontainer {
+	position: relative;
+}
+
+#worldmap {
+	/*-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);*/
+	position: relative;
+}
+
+#map .maparea {
+	display: block;
+	position: absolute;
+	/*opacity: 0.36;*/
+	cursor: -webkit-zoom-in; 
+	cursor: -moz-zoom-in;
+	background-color: rgba(200, 200, 86, 0);
+}
+
+#worldmap > .maparea {
+	z-index: 5;
+	visibility: visible;
+	position: absolute;
+}
+
+.subworld {
+	display: none;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	z-index: 20;
+}
+
+.subworld .subworld {
+	width: auto;
+}
+
+.closesubworld {
+	position: absolute;
+	right: 15%;
+	top: 2%;
+	width: 5%;
+	cursor: pointer;
+}
+
+.closesubworld:hover {
+	margin-top: 1px;
+}
+
+.nextmap {
+	position: absolute;
+	right: 1%;
+	top: 2%;
+	width: 13%;
+	cursor: pointer;
+}
+
+.nextmap:hover {
+	margin-top: 1px;
+}
+
+
+
+#map .subworld.maparea {
+	opacity: 1;
+	cursor: pointer;
+	min-width: 56px;
+}
+
+
+
+.subworldsectiondetail {
+	position: fixed;
+	width: 300px;
+	z-index: 100;
+	display: none;
+	opacity: 0;
+	padding-top: 10px;
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.79);
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.79);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.79);
+	background: #ffb800;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb800', endColorstr='#ffcf00'); /* for IE */
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#ffb800), to(#ffcf00));
+	background-image: -moz-linear-gradient(90deg, #ffb800 0%, #ffcf00 100%);
+	border-width: 2px;
+	color: #0050b9;
+	border-color: #cd6a00;
+	top: 30px;
+	margin-left: 70px;
+}
+
+.rightsidelocation .subworldsectiondetail {
+	margin-left: -350px;
+}
+
+.subworldsectiondetail span.image {
+	border: 1px solid #ffffff;
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.46);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.46);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.46);
+}
+
+.subworldsectiondetail .btn {
+	color: white;
+}
+
+.subworldsectiondetail a {
+	color: #432f00;
+}
+
+.subworldsectiondetail a.close {
+	opacity: 1;
+}
+
+.subworldsectiondetail .copysharelink {
+	width: 65px;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0 5px;
+}
+
+.subworldsectiondetail.location_type_2 {
+	color: white;
+	background: #007db6;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007db6', endColorstr='#00a4d8'); /* for IE */
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#007db6), to(#00a4d8));
+	background-image: -moz-linear-gradient(90deg, #007db6 0%, #00a4d8 100%);
+	border-color: #003a5f;
+}
+
+.subworldsectiondetail.location_type_2 .btn {
+	background: #ffb900;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb900', endColorstr='#ffd500'); /* for IE */
+	background: -moz-linear-gradient(90deg, #ffb900 0%, #ffd500 100%);
+	background: -webkit-gradient(linear, left bottom, left top, from(#ffb900), to(#ffd500)) #ffba00;
+	color: #003557;
+	text-shadow: 0 1px 1px #ffffff;
+	border-top-color: #fef5ba;
+	border-bottom-color: #10376a;
+}
+
+.subworldsectiondetail.location_type_2 a {
+	color: #ffce00;
+}
+
+.subworldsectiondetail.location_type_3 {
+	background: #de0000;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#de0000', endColorstr='#e70000'); /* for IE */
+	color: white;
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#de0000), to(#e70000));
+	background-image: -moz-linear-gradient(90deg, #de0000 0%, #e70000 100%);
+	border-color: #7d0000;
+}
+
+.subworldsectiondetail.location_type_3 .btn {
+	background: #ffb900;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb900', endColorstr='#ffd500'); /* for IE */
+	background: -moz-linear-gradient(90deg, #ffb900 0%, #ffd500 100%);
+	background: -webkit-gradient(linear, left bottom, left top, from(#ffb900), to(#ffd500)) #ffba00;
+	color: #590000;
+	text-shadow: 0 1px 1px #ffffff;
+	border-top-color: #fef5ba;
+	border-bottom-color: #10376a;
+}
+
+.subworldsectiondetail.location_type_3 a {
+	color: #ffce00;
+}
+
+.subworldsectiondetail.location_type_4 {
+	background: #36ae00;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#36ae00', endColorstr='#00cd2f'); /* for IE */
+	color: white;
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#36ae00), to(#00cd2f));
+	background-image: -moz-linear-gradient(90deg, #36ae00 0%, #00cd2f 100%);
+	border-color: #003a5f;
+}
+
+.subworldsectiondetail.location_type_4 .btn {
+	background: #ffb900;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb900', endColorstr='#ffd500'); /* for IE */
+	background: -moz-linear-gradient(90deg, #ffb900 0%, #ffd500 100%) #ffba00;
+	background: -webkit-gradient(linear, left bottom, left top, from(#ffb900), to(#ffd500)) #ffba00;
+	color: #590000;
+	text-shadow: 0 1px 1px #ffffff;
+	border-top-color: #fef5ba;
+	border-bottom-color: #10376a;
+}
+
+.subworldsectiondetail.location_type_4 a {
+	color: #ffce00;
+}
+
+.subsectiondetailscollumn1 {
+	float: left;
+	margin-right: 40px;
+	width: 120px;
+	margin-bottom: 10px;
+}
+
+.subsectiondetailscollumn2 {
+	float: left;
+	margin-bottom: 10px;
+}
+
+.subworldsectiondetail h3 {
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font: 24px Arvo, Georgia, "Times New Roman", Times, serif;
+}
+
+.subworldsectiondetail h4 {
+	margin: 0 0 10px;
+	text-transform: uppercase;
+	font: 16px Arvo, Georgia, "Times New Roman", Times, serif;
+}
+
+.subworldsectiondetail p {
+	margin-bottom: 5px;
+	font-size: 12px;
+	line-height: 17px;
+}
+
+.subworldsectiondetail span.image {
+	height: 150px;
+	overflow: hidden;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.subworldsectiondetail span.image img {
+	margin-top: -12%;
+}
+
+.subworldsectiondetail img.mapimage {
+	margin-bottom: 5px;
+	height: auto;
+}
+
+.subworldsectiondetail .btn {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.subworldsectiondetail iframe {
+	width: 300px;
+	height: 170px;
+}
+
+
+
+/* @end */
+
+.planandwinpanel {
+	color: white;
+	background: none;
+	border-style: none;
+	margin: 10px 0 0;
+}
+
+a.gototravelplanpanel {
+	color: #cdb200;
+	text-decoration: underline;
+}
+
+.planandwinpanel .collumn {
+	float: left;
+}
+
+.planandwinpanel .collumn hr {
+	position: absolute;
+	width: 560px;
+	margin-top: -6px;
+	border-top-color: #093258;
+	border-bottom-color: #366188;
+}
+
+.planandwinpanel .collumn3 .btn, .planandwinpanel .collumn4 .btn {
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.48);
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.48);
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.48);
+	background: #ffb500;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb500', endColorstr='#fed300'); /* for IE */
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#ffb500), to(#fed300));
+	background-image: -moz-linear-gradient(90deg, #ffb500 0%, #fed300 100%);
+	font-size: 15px;
+	font-weight: bold;
+	color: #154971;
+	padding-right: 25px;
+	padding-left: 25px;
+	line-height: 26px;
+}
+
+.planandwinpanel .collumn3 input.btn, .planandwinpanel .collumn4 input.btn {
+	height: auto;
+}
+
+.planandwinpanel .collumn3 .sharedlist .btn {
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.48);
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.48);
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.48);
+	background: #ffb500;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb500', endColorstr='#fed300'); /* for IE */
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#ffb500), to(#fed300));
+	background-image: -moz-linear-gradient(90deg, #ffb500 0%, #fed300 100%);
+	font-size: 15px;
+	font-weight: bold;
+	color: #154971;
+	padding-right: 10px;
+	padding-left: 10px;
+	line-height: 26px;
+	margin-top: 0;
+}
+
+.planandwinpanel .sharepanel .collumn3 .btn {
+	background: #00a7f8;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00a7f8', endColorstr='#00d0ff'); /* for IE */
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#00a7f8), to(#00d0ff));
+	background-image: -moz-linear-gradient(90deg, #00a7f8 0%, #00d0ff 100%);
+	color: #ffffff;
+	width: 150px;
+	text-align: left;
+	margin-right: 20px;
+	border-bottom-color: #093258;
+	position: relative;
+	padding: 10px 10px 10px 0;
+}
+
+.planandwinpanel .collumn3 .btn img {
+	float: left;
+	margin-right: 9px;
+	margin-top: -4px;
+}
+
+.planandwinpanel .sharepanel .collumn3 .btn img.done {
+	position: absolute;
+	right: -22px;
+	top: -4px;
+	display: none;
+}
+
+.planandwinpanel .sharepanel .collumn3 .btn.done img.done {
+	display: block;
+}
+
+.planandwinpanel .btn:hover {
+	background: #ffd400;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd400', endColorstr='#fed300'); /* for IE */
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd400), to(#fed300));
+	background-image: -moz-linear-gradient(90deg, #ffd400 0%, #fed300 100%);
+	background-position: 0 0;
+}
+
+.welcomepanel h2 {
+	text-transform: uppercase;
+	font: 60px Arvo, Georgia, "Times New Roman", Times, serif;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.welcomepanel h2, .welcomepanel h3 {
+	color: #ffd800;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+}
+
+.welcomepanel h3 {
+	margin-top: -15px;
+	font-size: 27px;
+	margin-bottom: 0;
+}
+
+.welcomepanel .collumn1 {
+	width: 353px;
+	margin-right: 40px;
+}
+
+.welcomepanel .collumn2 {
+	width: 550px;
+	margin-top: 9px;
+	font-size: 13px;
+	margin-right: 40px;
+	line-height: 16px;
+	margin-bottom: -6px;
+}
+
+.welcomepanel .collumn2 a {
+	color: #feca00;
+	text-decoration: underline;
+}
+
+.welcomepanel .collumn3 {
+	margin-top: 60px;
+}
+
+/*.welcomepanel .collumn2 p:first-child {
+	font-size: 24px;
+}*/
+
+.steps {
+	margin-bottom: 15px;
+	padding-top: 10px;
+}
+
+a.back {
+	display: block;
+	color: #fece00;
+	position: absolute;
+	bottom: 0;
+}
+
+.sortablelist .collumn1, .sentancepanel .collumn1, .submitpanel .collumn1, .sharepanel .collumn1 {
+	width: 300px;
+	margin-right: 40px;
+	font-size: 13px;
+	line-height: 16px;
+	margin-top: 0;
+	margin-left: 15px;
+}
+
+.sortablelist .collumn2 {
+	margin-top: 15px;
+	width: 590px;
+}
+
+.sortablelist .collumn3 {
+	margin-top: 20px;
+}
+
+.sortablelist {
+	display: none;
+}
+
+.sentancepanel {
+	display: none;
+}
+
+.sentancepanel .collumn1 {
+	width: 200px;
+}
+
+.sentancepanel .collumn2 {
+	margin-right: 40px;
+	margin-top: 15px;
+}
+
+.sentancepanel .collumn2 textarea {
+	width: 650px;
+}
+
+.sentancepanel .collumn3 a.btn {
+	margin-top: 40px;
+}
+
+.submitpanel {
+	display: none;
+}
+
+.submitpanel label {
+	float: left;
+	width: 120px;
+	padding-top: 5px;
+}
+
+.submitpanel label.error {
+	float: none;
+	width: 400px;
+	color: #fed300;
+}
+
+.submitpanel .collumn1 {
+	width: 200px;
+}
+
+.submitpanel .collumn2 {
+	width: 380px;
+	margin-top: 5px;
+}
+
+.submitpanel .collumn2 small {
+	position: absolute;
+}
+
+.submitpanel .collumn2 .text-field {
+	width: 230px;
+}
+
+.submitpanel .text-field {
+	margin-bottom: 0;
+}
+
+.submitpanel .collumn3 {
+	width: 260px;
+	margin-top: 5px;
+}
+
+.submitpanel .collumn3 small {
+	margin-left: 120px;
+	position: absolute;
+}
+
+.submitpanel .collumn3 input.phone-number {
+	width: 100px;
+}
+
+.submitpanel .collumn3 input.postcode {
+	width: 40px;
+}
+
+.submitpanel .collumn4 {
+	margin-top: 70px;
+	margin-left: 120px;
+}
+
+.submitpanel .collumn4 p {
+	line-height: 17px;
+}
+
+.submitpanel form.detailsform {
+	margin-bottom: 0;
+}
+
+#sortable1 { 
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0; 
+	float: left; 
+	width: 500px;
+}
+
+#sortable1 a.close {
+	left: 0;
+	position: absolute;
+	top: -1px;
+}
+
+#sortable1 li { 
+	margin: 0 0 1px 5px; 
+	padding: 2px 5px 10px 21px; 
+	font-size: 1em;
+	cursor: move;
+	float: left;
+	position: relative;
+	width: 9.5em;
+	height: 41px;
+}
+
+#sortable1 li span {
+	display: block;
+	height: 80px;
+}
+
+.sortablelist h2 {
+	padding-top: .2em;
+	line-height: 1em;
+	color: white;
+	margin-top: 0;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: normal;
+	font-style: normal;
+	margin-bottom: 35px;
+	margin-right: 20px;
+}
+
+.sortablelist .daytitles {
+	float: left;
+}
+
+.sortablelist .collumn3 a.btn {
+	margin-top: 110px;
+	margin-left: 30px;
+}
+
+.sortablelist .sharedlist {
+	display: none;
+}
+
+.planandwinpanel .wpcf7-text, .planandwinpanel .wpcf7-textarea {
+	width: 135px;
+}
+
+.planandwinpanel {
+	position: relative;
+}
+
+.planandwintab {
+	position: absolute;
+	top: -45px;
+	left: -3px;
+}
+
+.hiddenformfields {
+	display: none;
+}
+
+.sharepanel {
+	display: none;
+	font-size: 19px;
+}
+
+.sharepanel p {
+	font-size: 13px;
+	line-height: 16px;
+}
+
+.sharepanel .collumn1 {
+	width: 169px;
+}
+
+.sharepanel .collumn2 {
+	width: 160px;
+	margin-right: 40px;
+	margin-top: 15px;
+}
+
+.sharepanel .collumn2 em, a.makenewitinerary {
+	font-weight: normal;
+	font-style: normal;
+	color: #fed300;
+}
+
+.sharepanel .collumn3 {
+	width: 560px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.sharepanel .collumn4 {
+	text-align: center;
+	width: 120px;
+	margin-top: 10px;
+	margin-left: 19px;
+}
+
+.sharepanel .collumn4 form {
+	margin-bottom: -15px;
+}
+
+.finishpanel {
+	display: none;
+}
+
+// contact 7 form
+
+div.wpcf7 {
+	margin: 0;
+	padding: 0;
+}
+
+div.wpcf7-response-output {
+	margin: 1em 0 0em !important;
+	padding: 0.2em .5em !important;
+}
+
+div.wpcf7-response-output .alert {
+	margin-bottom: 0;
+}
+
+div.wpcf7-mail-sent-ok {
+	border: none !important;
+}
+
+div.wpcf7-mail-sent-ng {
+	border: none !important;
+}
+
+div.wpcf7-spam-blocked {
+	border: none !important;
+}
+
+div.wpcf7-validation-errors {
+	border: none !important;
+}
+
+span.wpcf7-form-control-wrap {
+	position: relative;
+}
+
+span.wpcf7-not-valid-tip {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 100;
+	background: #fff;
+	border: 1px solid #ff0000;
+	font-size: 10pt;
+	width: 280px;
+	padding: 2px;
+}
+
+span.wpcf7-not-valid-tip-no-ajax {
+	color: #f00;
+	font-size: 10pt;
+	display: block;
+}
+
+span.wpcf7-list-item {
+	margin-left: 0.5em;
+}
+
+.wpcf7-display-none {
+	display: none;
+}
+
+div.wpcf7 img.ajax-loader {
+	border: none;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+
+div.wpcf7 .watermark {
+	color: #888;
+}
+
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+
+
+@media print {
+
+
+
+}
+
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-width: 990px) {
+		/*#page-wrap {
+			width: 100%; 
+			margin: 20px 0;
+			
+		}
+		body {
+			padding: 0 20px;
+		}*/
+}
+
+@media screen and (max-device-width: 480px) {
+		
+}
+
+@media all and (orientation: portrait) {
+	
+}
+
+@media all and (orientation: landscape) {
+	
+}
